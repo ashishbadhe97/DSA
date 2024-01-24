@@ -1,19 +1,20 @@
 
-const bubbleSort = (n, arr, index) => {
+const bubbleSort = (lastIndex, arr, index) => {
 
-    if(n < 1){
+    if(lastIndex < 1){
         return arr;
     }
 
-    if(index > n){
-        return bubbleSort(n - 1, arr, 0);
+    if(index > lastIndex - 1){
+       return bubbleSort(lastIndex - 1, arr, 0);
     }
 
     if(arr[index] > arr[index + 1]){
         swap(index, index + 1, arr);
     }
 
-    return bubbleSort(n, arr, index + 1);
+    return bubbleSort(lastIndex, arr, index + 1);
+
 }
 
 const swap = (ind1, ind2, arr) => {
