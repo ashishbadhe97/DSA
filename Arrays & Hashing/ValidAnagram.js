@@ -26,7 +26,6 @@ var isAnagram = function (s, t) {
   return false;
 };
 
-let s = "anagram",
-  t = "nagaram";
+let s = "anagram", t = "nagaram";
 
 console.log(isAnagram(s, t));
