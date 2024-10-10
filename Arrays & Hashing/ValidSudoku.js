@@ -18,8 +18,8 @@ Output: true
 
 /*
 
-TC: O(n ^ 2);
-SC: O(n)
+TC: O(n ^ m);
+SC: O(1) Each cell stores 3 string (row,col,box) hence total string 3 * 81 = 243. O(243) = O(1);
 
 Since there are only 9 elements complexity will remain constant
 */
@@ -96,6 +96,8 @@ let board = [
 /*
 Using a single set. We will store the elements as strings in set.
 
+TC: O(n ^ m) in this case n and m both are 9 hence constant time complexity
+SC: O()
 */
 
 var isValidSudokuOp = function (board) {
