@@ -3,6 +3,9 @@
 Input: head = [3,2,0,-4], pos = 1
 Output: true
 
+Time Complexity: O(n)
+Space Complexity: O(1)
+
 */
 
 

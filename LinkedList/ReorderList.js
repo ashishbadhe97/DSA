@@ -3,6 +3,9 @@
 Input: head = [1,2,3,4]
 Output: [1,4,2,3]
 
+Time Complexity: O(n)
+Space Complexity: O(1)
+
 */
 
 function ListNode(val, next) {
